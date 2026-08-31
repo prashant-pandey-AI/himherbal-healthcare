@@ -77,29 +77,38 @@
 
     <main id="main">
       <!-- ============ 1. HERO (cinematic video background) ============ -->
-      <section class="hero hero-video" id="hero">
-        <video
-          class="hero-vid"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="auto"
-          poster="assets/img/feature-privatelabel.jpg"
-          aria-hidden="true"
-        >
-          <source src="assets\img\SCENE_—_BUILD_YOUR_BRAND_.mp4" type="video/mp4" />
-        </video>
-        
-      </section>
-      <button
-  type="button"
-  class="video-sound-btn"
-  id="videoSoundBtn"
-  aria-label="Unmute video"
+      <!-- ============ HERO VIDEO ============ -->
+
+<section class="hero hero-video" id="hero">
+
+<video
+class="hero-vid"
+id="heroVideo"
+autoplay
+muted
+loop
+playsinline
+preload="auto"
+poster="assets/img/feature-privatelabel.jpg"
+aria-hidden="true"
 >
-  🔇
-</button>
+<source
+  src="assets/img/SCENE_—_BUILD_YOUR_BRAND_.mp4"
+  type="video/mp4"
+/>
+  </video>
+  <!-- Video Overlay -->
+  <div class="hero-video-overlay"></div>
+  <!-- Sound Button -->
+<button
+type="button"
+class="video-sound-btn"
+id="videoSoundBtn"
+aria-label="Unmute video"
+>
+🔇
+  </button>
+</section>
 
       <!-- ============ 2. STATISTICS BAR ============ -->
       <section class="stats" aria-label="Company at a glance">

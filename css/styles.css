@@ -9,25 +9,25 @@
   --green-900: #0A0A0A;
   /* near-black ink; also used for darkest band backgrounds */
   --green-800: #F3ECDD;
-  /* ivory \u2014 card / component title text */
+  /* ivory — card / component title text */
   --green-700: #F3ECDD;
-  /* ivory \u2014 general text-on-dark default */
+  /* ivory — general text-on-dark default */
   --green-600: #B9872B;
-  /* antique gold \u2014 gradient stops / accent dots */
+  /* antique gold — gradient stops / accent dots */
   --green-500: #D4A537;
-  /* gold \u2014 hover borders / accents */
+  /* gold — hover borders / accents */
   --green-100: #D4A537;
-  /* gold \u2014 icon-chip circle backgrounds */
+  /* gold — icon-chip circle backgrounds */
   --green-50: #100D09;
   /* subtle dark tint for zebra-striped sections */
 
   /* Gold accent scale */
   --gold-600: #E3B54A;
-  /* gold accent \u2014 eyebrow / labels, readable on dark */
+  /* gold accent — eyebrow / labels, readable on dark */
   --gold-500: #D4A537;
-  /* gold accent \u2014 CTA, rings, dots */
+  /* gold accent — CTA, rings, dots */
   --gold-400: #F2CB6E;
-  /* light gold \u2014 accent on dark surfaces */
+  /* light gold — accent on dark surfaces */
   --amber-glow: rgba(212, 165, 55, .9);
   --chip-ink: #0A0A0A;
   /* dark icon-glyph color on gold chip backgrounds */
@@ -48,7 +48,7 @@
   --text: var(--ink);
   --text-muted: var(--ink-soft);
   --primary: #D4A537;
-  /* gold \u2014 primary CTA */
+  /* gold — primary CTA */
   --primary-dark: var(--ink);
   --accent: #C99A3E;
 
@@ -1299,15 +1299,6 @@ ul {
   margin-bottom: 1.15rem;
   display: flex;
   flex-direction: column;
-}
-
-.hero-inner,
-.about-grid,
-.excellence-inner,
-.global-inner,
-.contact-inner {
-  grid-template-columns: 1fr;
-  gap: 2.25rem;
 }
 
 .contact-form {
@@ -3959,7 +3950,7 @@ body {
 
 /* World map: give it breathing room + hide on very small screens if cramped */
 @media (max-width: 860px) {
-  .global-map {
+  .world-wrap {
     max-width: 560px;
     margin-inline: auto;
     width: 100%;
