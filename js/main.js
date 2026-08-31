@@ -117,28 +117,146 @@
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
+  // /* ---- Mobile nav ---- */
+  // const toggle = document.getElementById("navToggle");
+  // const nav = document.getElementById("mainNav");
+  // let backdrop;
+  // const setNav = (open) => {
+  //   nav.classList.toggle("open", open);
+  //   toggle.setAttribute("aria-expanded", String(open));
+  //   document.body.style.overflow = open ? "hidden" : "";
+  //   if (open && !backdrop) {
+  //     backdrop = document.createElement("div");
+  //     backdrop.className = "nav-backdrop";
+  //     document.body.appendChild(backdrop);
+  //     requestAnimationFrame(() => backdrop.classList.add("show"));
+  //     backdrop.addEventListener("click", () => setNav(false));
+  //   } else if (!open && backdrop) {
+  //     backdrop.classList.remove("show");
+  //     const b = backdrop; backdrop = null;
+  //     setTimeout(() => b.remove(), 300);
+  //   }
+  // };
+  // toggle.addEventListener("click", () => setNav(toggle.getAttribute("aria-expanded") !== "true"));
+  // nav.addEventListener("click", (e) => { if (e.target.tagName === "A") setNav(false); });
+
+
   /* ---- Mobile nav ---- */
-  const toggle = document.getElementById("navToggle");
-  const nav = document.getElementById("mainNav");
-  let backdrop;
-  const setNav = (open) => {
-    nav.classList.toggle("open", open);
-    toggle.setAttribute("aria-expanded", String(open));
-    document.body.style.overflow = open ? "hidden" : "";
-    if (open && !backdrop) {
-      backdrop = document.createElement("div");
-      backdrop.className = "nav-backdrop";
-      document.body.appendChild(backdrop);
-      requestAnimationFrame(() => backdrop.classList.add("show"));
-      backdrop.addEventListener("click", () => setNav(false));
-    } else if (!open && backdrop) {
-      backdrop.classList.remove("show");
-      const b = backdrop; backdrop = null;
-      setTimeout(() => b.remove(), 300);
-    }
-  };
-  toggle.addEventListener("click", () => setNav(toggle.getAttribute("aria-expanded") !== "true"));
-  nav.addEventListener("click", (e) => { if (e.target.tagName === "A") setNav(false); });
+
+const toggle = document.getElementById("navToggle");
+const nav = document.getElementById("mainNav");
+
+let backdrop;
+
+if (toggle && nav) {
+
+const setNav = (open) => {
+
+
+nav.classList.toggle("open", open);
+
+toggle.setAttribute(
+  "aria-expanded",
+  String(open)
+);
+
+toggle.setAttribute(
+  "aria-label",
+  open ? "Close menu" : "Open menu"
+);
+
+document.body.style.overflow =
+  open ? "hidden" : "";
+
+
+if (open && !backdrop) {
+
+  backdrop =
+    document.createElement("div");
+
+  backdrop.className =
+    "nav-backdrop";
+
+  document.body.appendChild(backdrop);
+
+
+  requestAnimationFrame(() => {
+    backdrop.classList.add("show");
+  });
+
+
+  backdrop.addEventListener(
+    "click",
+    () => setNav(false)
+  );
+
+} else if (!open && backdrop) {
+
+  backdrop.classList.remove("show");
+
+  const b = backdrop;
+
+  backdrop = null;
+
+
+  setTimeout(() => {
+    b.remove();
+  }, 300);
+
+}
+
+
+};
+
+toggle.addEventListener(
+"click",
+() => {
+
+
+  const isOpen =
+    toggle.getAttribute(
+      "aria-expanded"
+    ) === "true";
+
+  setNav(!isOpen);
+
+}
+
+
+);
+
+nav.addEventListener(
+"click",
+(e) => {
+
+
+  if (e.target.tagName === "A") {
+    setNav(false);
+  }
+
+}
+
+
+);
+
+/* Close menu on resize */
+
+window.addEventListener(
+"resize",
+() => {
+
+
+  if (window.innerWidth > 991) {
+    setNav(false);
+  }
+
+}
+
+
+);
+
+}
+
 
   /* ---- Active nav link on scroll (scroll-spy) ---- */
   const navLinks = Array.from(nav.querySelectorAll("a"));
@@ -280,3 +398,60 @@
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 })();
+/* ==========================================================
+HERO VIDEO SOUND CONTROL
+========================================================== */
+
+const heroVideo =
+document.getElementById("heroVideo");
+
+const videoSoundBtn =
+document.getElementById("videoSoundBtn");
+
+if (heroVideo && videoSoundBtn) {
+
+heroVideo.muted = true;
+
+videoSoundBtn.addEventListener(
+"click",
+() => {
+
+
+  heroVideo.muted =
+    !heroVideo.muted;
+
+
+  if (heroVideo.muted) {
+
+    videoSoundBtn.textContent = "🔇";
+
+    videoSoundBtn.setAttribute(
+      "aria-label",
+      "Unmute video"
+    );
+
+  } else {
+
+    videoSoundBtn.textContent = "🔊";
+
+    videoSoundBtn.setAttribute(
+      "aria-label",
+      "Mute video"
+    );
+
+    heroVideo.play()
+      .catch(() => {});
+
+  }
+
+}
+
+
+);
+
+/* Try playing video again on mobile */
+
+heroVideo.play()
+.catch(() => {});
+
+}

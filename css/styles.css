@@ -266,7 +266,10 @@ ul {
   background: rgba(10, 10, 10, .82);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, .08);
-  transition: box-shadow .25s var(--ease), border-color .25s var(--ease), background .25s var(--ease);
+  transition:
+  box-shadow .25s var(--ease),
+  border-color .25s var(--ease),
+  background .25s var(--ease);
 }
 
 .site-header.scrolled {
@@ -371,9 +374,241 @@ ul {
 .nav-toggle {
   display: none;
 }
+/* ==========================================================
+MOBILE NAVIGATION
+========================================================== */
+
+.nav-toggle {
+display: none;
+
+background: transparent;
+border: none;
+
+cursor: pointer;
+
+padding: 8px;
+
+position: relative;
+z-index: 1002;
+}
+
+.nav-toggle span {
+display: block;
+
+width: 25px;
+height: 2px;
+
+margin: 5px 0;
+
+background: #ffffff;
+
+border-radius: 5px;
+
+transition:
+transform 0.3s ease,
+opacity 0.3s ease;
+}
+
+/* ==========================================================
+TABLET + MOBILE
+========================================================== */
+
+@media (max-width: 991px) {
+
+.site-header {
+z-index: 1000;
+}
+
+.header-inner {
+min-height: 70px;
+
+
+gap: 12px;
+
+
+}
+
+/* Hide desktop navigation */
+
+.main-nav {
+position: fixed;
+
+
+top: 0;
+right: 0;
+
+width: min(82vw, 360px);
+height: 100dvh;
+
+margin: 0;
+
+padding: 95px 25px 30px;
+
+background: rgba(10, 10, 10, 0.98);
+
+border-left: 1px solid rgba(255, 255, 255, 0.08);
+
+transform: translateX(105%);
+
+transition: transform 0.35s ease;
+
+z-index: 1001;
+
+overflow-y: auto;
+
+
+}
+
+/* OPEN MENU */
+
+.main-nav.open {
+transform: translateX(0);
+}
+
+.main-nav ul {
+display: flex;
+
+
+flex-direction: column;
+
+align-items: stretch;
+
+gap: 8px;
+
+padding: 0;
+margin: 0;
+
+list-style: none;
+
+
+}
+
+.main-nav li {
+width: 100%;
+}
+
+.main-nav a {
+display: block;
+
+
+width: 100%;
+
+padding: 16px 18px;
+
+font-size: 1.05rem;
+
+color: #ffffff;
+
+border-radius: 8px;
+
+transition:
+  background 0.25s ease,
+  color 0.25s ease;
+
+
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+background: rgba(242, 203, 110, 0.12);
+
+
+color: #f2cb6e;
+
+
+}
+
+/* Show hamburger */
+
+.nav-toggle {
+display: block;
+
+
+margin-left: auto;
+
+
+}
+
+/* Hide CTA on mobile */
+
+.nav-cta {
+display: none;
+}
+
+/* Hamburger animation */
+
+.main-nav.open ~ .nav-toggle span:nth-child(1) {
+transform: translateY(7px) rotate(45deg);
+}
+
+.main-nav.open ~ .nav-toggle span:nth-child(2) {
+opacity: 0;
+}
+
+.main-nav.open ~ .nav-toggle span:nth-child(3) {
+transform: translateY(-7px) rotate(-45deg);
+}
+
+}
+
+/* ==========================================================
+MOBILE BACKDROP
+========================================================== */
+
+.nav-backdrop {
+position: fixed;
+
+inset: 0;
+
+background: rgba(0, 0, 0, 0.55);
+
+opacity: 0;
+
+transition: opacity 0.3s ease;
+
+z-index: 999;
+}
+
+.nav-backdrop.show {
+opacity: 1;
+}
+
+/* ==========================================================
+SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+.main-nav {
+width: 88vw;
+
+
+padding:
+  85px
+  20px
+  25px;
+
+
+}
+
+.brand-name {
+font-size: 1rem;
+}
+
+.brand-name small {
+font-size: 0.65rem;
+}
+
+.brand-mark {
+width: 40px;
+height: 40px;
+}
+
+}
+
 
 /* ---------- Hero (cinematic video) ---------- */
-.hero {
+/* .hero {
   position: relative;
   overflow: hidden;
   color: #413e3e;
@@ -393,14 +628,14 @@ ul {
   height: 100%;
   object-fit: cover;
   z-index: -2;
-}
+} */
 /* Small transparent mute / unmute button */
 
-.hero.hero-video {
+/* .hero.hero-video {
   position: relative;
-}
+} */
 
-.video-sound-btn {
+/* .video-sound-btn {
   position: absolute;
   left: 18px;
   bottom: 18px;
@@ -433,7 +668,219 @@ ul {
 .video-sound-btn:hover {
   background: rgba(0, 0, 0, 0.6);
   transform: scale(1.08);
+} */
+
+/* ==========================================================
+HERO VIDEO
+========================================================== */
+
+.hero {
+position: relative;
+
+overflow: hidden;
+
+color: #413e3e;
 }
+
+.hero-video {
+position: relative;
+
+display: grid;
+
+align-items: center;
+
+min-height: min(100vh, 900px);
+
+min-height: min(100svh, 900px);
+
+padding:
+clamp(2rem, 10vw, 8rem)
+0
+clamp(4rem, 8vw, 6rem);
+
+isolation: isolate;
+}
+
+.hero-vid {
+position: absolute;
+
+inset: 0;
+
+width: 100%;
+height: 100%;
+
+object-fit: cover;
+
+object-position: center;
+
+z-index: 0;
+
+pointer-events: none;
+}
+
+/* Video overlay */
+
+.hero-video-overlay {
+position: absolute;
+
+inset: 0;
+
+background:
+linear-gradient(
+90deg,
+rgba(0, 0, 0, 0.35),
+rgba(0, 0, 0, 0.12)
+);
+
+z-index: 1;
+
+pointer-events: none;
+}
+
+/* Any hero content */
+
+.hero-video > .container,
+.hero-video > .hero-container {
+position: relative;
+
+z-index: 2;
+}
+
+/* ==========================================================
+SOUND BUTTON
+========================================================== */
+
+.video-sound-btn {
+position: absolute;
+
+left: 18px;
+bottom: 18px;
+
+width: 38px;
+height: 38px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+border: 1px solid
+rgba(255, 255, 255, 0.25);
+
+border-radius: 50%;
+
+background:
+rgba(0, 0, 0, 0.35);
+
+color: #ffffff;
+
+font-size: 16px;
+
+line-height: 1;
+
+cursor: pointer;
+
+z-index: 10;
+
+backdrop-filter: blur(6px);
+
+-webkit-backdrop-filter: blur(6px);
+
+transition:
+transform 0.2s ease,
+background 0.2s ease;
+}
+
+.video-sound-btn:hover {
+background:
+rgba(0, 0, 0, 0.6);
+
+transform: scale(1.08);
+}
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 991px) {
+
+.hero-video {
+min-height: 700px;
+
+
+padding: 80px 0 60px;
+
+
+}
+
+.hero-vid {
+object-position: center center;
+}
+
+}
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+.hero-video {
+min-height: 100svh;
+
+
+padding: 80px 0 60px;
+
+
+}
+
+.hero-vid {
+object-position: center;
+
+
+width: 100%;
+height: 100%;
+
+
+}
+
+.video-sound-btn {
+left: 14px;
+bottom: 14px;
+
+
+width: 38px;
+height: 38px;
+
+
+}
+
+}
+
+/* ==========================================================
+SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+.hero-video {
+min-height: 600px;
+}
+
+.video-sound-btn {
+left: 12px;
+bottom: 12px;
+
+
+width: 36px;
+height: 36px;
+
+
+}
+
+}
+
+
 
 /* Mobile */
 @media (max-width: 560px) {
