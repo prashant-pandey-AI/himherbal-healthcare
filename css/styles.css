@@ -819,6 +819,21 @@ object-position: center center;
 
 }
 
+/* Fix mobile menu background */
+.main-nav {
+background: #0a0a0a !important;
+}
+
+/* Fix menu text visibility */
+.main-nav a {
+color: #ffffff !important;
+}
+
+/* Active / selected menu color */
+.main-nav a.active {
+color: #f2cb6e !important;
+}
+
 /* ==========================================================
 MOBILE
 ========================================================== */
