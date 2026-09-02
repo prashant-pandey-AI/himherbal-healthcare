@@ -141,14 +141,14 @@
 
   const photos = [
     
-    ["exhibition 44.jpg", "At the Expo"],
+    ["exhibition-section.jpg", "At the Expo"],
     ["gallery-2.jpg", "Team & Partners"],
     ["exhibition-2.jpg", "Exhibition Booth"],
     ["celebrity 34.jpg", "Celebrity Association"],
     ["csr-1.jpg", "CSR Initiative"],
     ["exhibition 36.JPG", "Global Meetings"],
     ["machinery-lg.jpg", "Production Floor"],
-    ["exhibition 18.JPG", "Product Showcase"],
+    ["exhibition 44 .jpg", "Product Showcase"],
     ["1.png", "India Best MSME Award"],
     ["4.png", "Award "],
     ["6.png", "International Ayush Natural Award"],
