@@ -148,7 +148,7 @@
     ["csr-1.jpg", "CSR Initiative"],
     ["exhibition 36.JPG", "Global Meetings"],
     ["machinery-lg.jpg", "Production Floor"],
-    ["exhibition 44 .jpg", "Product Showcase"],
+    ["exhibition 5.jpg", "Product Showcase"],
     ["1.png", "India Best MSME Award"],
     ["4.png", "Award "],
     ["6.png", "International Ayush Natural Award"],
