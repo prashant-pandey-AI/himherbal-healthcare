@@ -28,105 +28,105 @@
   const PRODUCTS = {
     Perfumes: [
       // IMAGE 01 — PERFUMES — "Blue Sportz" (John Phillips) — REPLACE WITH images/Perfumes/01.png
-      { name: "Blue Sportz", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/15.png" },
+      { name: "Blue Sportz", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/15.webP" },
       // IMAGE 02 — PERFUMES — "Passport" (John Phillips) — REPLACE WITH images/Perfumes/02.png
-      { name: "Passport", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/16.png" },
+      { name: "Passport", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/16.webP" },
       // IMAGE 03 — PERFUMES — "Woody" (John Phillips) — REPLACE WITH images/Perfumes/03.png
-      { name: "Woody", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/17.png" },
+      { name: "Woody", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/17.webP" },
       // IMAGE 04 — PERFUMES — "London Dreams" (John Phillips) — REPLACE WITH images/Perfumes/04.png
-      { name: "London Dreams", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/18.png" },
+      { name: "London Dreams", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/18.webP" },
       // IMAGE 05 — PERFUMES — "Sparkle" (John Phillips) — REPLACE WITH images/Perfumes/05.png
-      { name: "Sparkle", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/19.png" },
+      { name: "Sparkle", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/19.webP" },
       // IMAGE 06 — PERFUMES — "Mr. Blue" (John Phillips) — REPLACE WITH images/Perfumes/06.png
-      { name: "Mr. Blue", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/20.png" },
+      { name: "Mr. Blue", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/20.webP" },
       // IMAGE 07 — PERFUMES — "Water Drops" (John Phillips) — REPLACE WITH images/Perfumes/07.png
-      { name: "Water Drops", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/21.png" },
+      { name: "Water Drops", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/21.webP" },
       // IMAGE 08 — PERFUMES — "Party Girl" (Marconi) — REPLACE WITH images/Perfumes/08.png
-      { name: "Party Girl", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/22.png" },
+      { name: "Party Girl", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/22.webP" },
       // IMAGE 09 — PERFUMES — "Senorita" (Marconi) — REPLACE WITH images/Perfumes/09.png
-      { name: "Senorita", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/23.png" },
+      { name: "Senorita", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/23.webP" },
       // IMAGE 10 — PERFUMES — Marconi fragrance, name unclear on artwork — CONFIRM NAME, then REPLACE WITH images/Perfumes/10.png
-      { name: "Marconi Fragrance (name to confirm)", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/24.png" },
+      { name: "Marconi Fragrance (name to confirm)", brand: "Marconi", desc: "Marconi", img: "images/Perfumes/24.webP" },
       // IMAGE 11 — PERFUMES — "Manget M" (John Phillips) — REPLACE WITH images/Perfumes/11.png
-      { name: "Manget M", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/25.png" },
+      { name: "Manget M", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/25.webP" },
       // IMAGE 12 — PERFUMES — "Dark Code" (John Phillips) — REPLACE WITH images/Perfumes/12.png
-      { name: "Dark Code", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/26.png" },
+      { name: "Dark Code", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/26.webP" },
       
-      { name: "Legend NOIR", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/30.jpg" },
-      { name: "Secret Code", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/31.jpg" },
-      { name: "Roar", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/32.jpg" },
-      { name: "Black Stone", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/33.jpg" },
-      { name: "Intense", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/34.jpg" },
-      { name: "Gun Point", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/35.jpg" },
-      { name: "The Boss", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/36.jpg" },
-      { name: "Luxury OUD", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/37.jpg" },
-      { name: "Goldmine", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/38.jpg" },
-      { name: "Bold Black", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/39.jpg" },
-      { name: "Ameer All Oud", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/40.jpg" },
-      { name: "Desire Intimiate", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/41.jpg" },
-      { name: "Rock Star", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/42.jpg" },
-      { name: "Bakkarat Rouge", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/43.jpg" },
-      { name: "Oud Moment", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/44.jpg" },
-      { name: "Most Wanted", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/45.jpg" },
-      { name: "Attitude", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/46.jpg" },
-      { name: "Urban Cigar", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/47.jpg" },
-      { name: "Cruize Passionate", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/48.jpg" },
-      { name: "Sportz Winner", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/49.jpg" },
-      { name: "Sportz Victory", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/50.jpg" },
-      { name: "Sportz Racer", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/51.jpg" },
-      { name: "Sportz Rider", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/52.jpg" },
-      { name: "Sportz Challenger", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/53.jpg" },
-      { name: "Sportz Power Play", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/54.jpg" },
-      { name: "Striker", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/55.jpg" },
-      { name: "Sign Up", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/56.jpg" },
-      { name: "Evoke", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/57.jpg" },
-      { name: "Urbana", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/59.jpg" },
-      { name: "Blue Ocean", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/60.jpg" },
-      { name: "Indigo Blue", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/61.jpg" },
-      { name: "Velevel", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/63.jpg" },
+      { name: "Legend NOIR", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/30.webP" },
+      { name: "Secret Code", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/31.webP" },
+      { name: "Roar", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/32.webP" },
+      { name: "Black Stone", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/33.webP" },
+      { name: "Intense", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/34.webP" },
+      { name: "Gun Point", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/35.webP" },
+      { name: "The Boss", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/36.webP" },
+      { name: "Luxury OUD", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/37.webP" },
+      { name: "Goldmine", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/38.webP" },
+      { name: "Bold Black", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/39.webP" },
+      { name: "Ameer All Oud", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/40.webP" },
+      { name: "Desire Intimiate", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/41.webP" },
+      { name: "Rock Star", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/42.webP" },
+      { name: "Bakkarat Rouge", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/43.webP" },
+      { name: "Oud Moment", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/44.webP" },
+      { name: "Most Wanted", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/45.webP" },
+      { name: "Attitude", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/46.webP" },
+      { name: "Urban Cigar", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/47.webP" },
+      { name: "Cruize Passionate", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/48.webP" },
+      { name: "Sportz Winner", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/49.webP" },
+      { name: "Sportz Victory", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/50.webP" },
+      { name: "Sportz Racer", brand: "John Phillips", desc: "John Phillips", img:"images/Perfumes/51.webP" },
+      { name: "Sportz Rider", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/52.webP" },
+      { name: "Sportz Challenger", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/53.webP" },
+      { name: "Sportz Power Play", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/54.webP" },
+      { name: "Striker", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/55.webP" },
+      { name: "Sign Up", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/56.webP" },
+      { name: "Evoke", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/57.webP" },
+      { name: "Urbana", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/59.webP" },
+      { name: "Blue Ocean", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/60.webP" },
+      { name: "Indigo Blue", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/61.webP" },
+      { name: "Velevel", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/63.webP" },
           ],
     Attar: [
-      { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/43.png"},
+      { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/43.webP"},
       
-      { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/44.png" },
+      { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/44.webP" },
       
-      { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/45.png" },
+      { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/45.webP" },
       
-      { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/46.png" },
+      { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/46.webP" },
       
-      { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/47.png" },
+      { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/47.webP" },
       
-      { name: "Kesar Chandan Sukhad", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/48.png" },
+      { name: "Kesar Chandan Sukhad", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/48.webP" },
       
-      { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/49.png" }
+      { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/49.webP" }
     ],
     "Body Care": [
-      // IMAGE 22 — BODY CARE — "Turmeric Skin Cream" (Him Herbal) — REPLACE WITH images/Body care/22.png
-      { name: "Turmeric Skin Cream", brand: "Him Herbal", desc: "For Fair & Brighten, Soften Skin", img: "images/Body care/30.png" },
-      // IMAGE 23 — BODY CARE — "Balm" (Him Herbal) — REPLACE WITH images/Body care/23.png
-      { name: "Extra Power Balm", brand: "Him Herbal", desc: "Headache · Body Ache · Cold", img: "images/Body care/31.png" },
-      // IMAGE 24 — BODY CARE — "Body Lotion" (Him Herbal) — two variants (Advanced Whitening / Natural Moisturizing) shown on one label — REPLACE WITH images/Body care/24.png
-      { name: "Body Lotion", brand: "Him Herbal", desc: "Advanced Whitening & Natural Moisturizing", img: "images/Body care/32.png" },
-      // IMAGE 25 — BODY CARE — "Ice Talc Herbal Cool Powder" (Him Herbal) — REPLACE WITH images/Body care/25.png
-      { name: "Ice Talc Herbal Cool Powder", brand: "Him Herbal", desc: "Cooling Freshness", img: "images/Body care/33.png" },
-      // IMAGE 26 — BODY CARE — "Face Wash" (Him Herbal) — two variants (Neem & Aloevera / Fruit) shown on one label — REPLACE WITH images/Body care/26.png
-      { name: "Face Wash", brand: "Him Herbal", desc: "Neem & Aloevera / Fruit", img: "images/Body care/34.png" },
-      // IMAGE 27 — BODY CARE — "Fairness Cream for Men" (Him Herbal) — REPLACE WITH images/Body care/27.png
-      { name: "Fairness Cream for Men", brand: "Him Herbal", desc: "Complete Fairness Solution for Male Skin", img: "images/Body care/35.png" },
-      // IMAGE 28 — BODY CARE — "Pain Relief Ointment" (Him Herbal) — REPLACE WITH images/Body care/28.png
-      { name: "Pain Relief Ointment", brand: "Him Herbal", desc: "Back, Spinal, Neck, Shoulder, Joint & Knee Pain", img: "images/Body care/36.png" },
-      // IMAGE 29 — BODY CARE — "Spot Nil Cream" (Him Herbal) — REPLACE WITH images/Body care/29.png
-      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Body care/37.png" }
+      // IMAGE 22 — BODY CARE — "Turmeric Skin Cream" (Him Herbal) — REPLACE WITH images/Body care/22.webP
+      { name: "Turmeric Skin Cream", brand: "Him Herbal", desc: "For Fair & Brighten, Soften Skin", img: "images/Body care/30.webP" },
+      // IMAGE 23 — BODY CARE — "Balm" (Him Herbal) — REPLACE WITH images/Body care/23.webP
+      { name: "Extra Power Balm", brand: "Him Herbal", desc: "Headache · Body Ache · Cold", img: "images/Body care/31.webP" },
+      // IMAGE 24 — BODY CARE — "Body Lotion" (Him Herbal) — two variants (Advanced Whitening / Natural Moisturizing) shown on one label — REPLACE WITH images/Body care/24.webP
+      { name: "Body Lotion", brand: "Him Herbal", desc: "Advanced Whitening & Natural Moisturizing", img: "images/Body care/32.webP" },
+      // IMAGE 25 — BODY CARE — "Ice Talc Herbal Cool Powder" (Him Herbal) — REPLACE WITH images/Body care/25.webP
+      { name: "Ice Talc Herbal Cool Powder", brand: "Him Herbal", desc: "Cooling Freshness", img: "images/Body care/33.webP" },
+      // IMAGE 26 — BODY CARE — "Face Wash" (Him Herbal) — two variants (Neem & Aloevera / Fruit) shown on one label — REPLACE WITH images/Body care/26.webP
+      { name: "Face Wash", brand: "Him Herbal", desc: "Neem & Aloevera / Fruit", img: "images/Body care/34.webP" },
+      // IMAGE 27 — BODY CARE — "Fairness Cream for Men" (Him Herbal) — REPLACE WITH images/Body care/27.webP
+      { name: "Fairness Cream for Men", brand: "Him Herbal", desc: "Complete Fairness Solution for Male Skin", img: "images/Body care/35.webP" },
+      // IMAGE 28 — BODY CARE — "Pain Relief Ointment" (Him Herbal) — REPLACE WITH images/Body care/28.webP
+      { name: "Pain Relief Ointment", brand: "Him Herbal", desc: "Back, Spinal, Neck, Shoulder, Joint & Knee Pain", img: "images/Body care/36.webP" },
+      // IMAGE 29 — BODY CARE — "Spot Nil Cream" (Him Herbal) — REPLACE WITH images/Body care/29.webP
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Body care/37.webP" }
     ],
     "Hair Care": [
       // IMAGE 30 — HAIR CARE — "Almond Gold" (Him Herbal) — REPLACE WITH images/Hair Care/30.png
-      { name: "Almond Gold", brand: "Him Herbal", desc: "Non-Sticky Hair Oil", img: "images/Hair Care/38.png" },
+      { name: "Almond Gold", brand: "Him Herbal", desc: "Non-Sticky Hair Oil", img: "images/Hair Care/38.webP" },
       // IMAGE 31 — HAIR CARE — "Him Herbal Tel" (Him Herbal) — REPLACE WITH images/Hair Care/31.png
-      { name: "Him Herbal Tel", brand: "Him Herbal", desc: "Ayurvedic Herbal Hair Oil", img: "images/Hair Care/39.png" },
+      { name: "Him Herbal Tel", brand: "Him Herbal", desc: "Ayurvedic Herbal Hair Oil", img: "images/Hair Care/39.webP" },
       // IMAGE 32 — HAIR CARE — "Kesh Gange" (Kesh Gange) — REPLACE WITH images/Hair Care/32.png
-      { name: "Kesh Gange", brand: "Kesh Gange", desc: "Ayurvedic Tail Vidhi Hair Oil — Controls Hair Fall", img: "images/Hair Care/40.png" },
+      { name: "Kesh Gange", brand: "Kesh Gange", desc: "Ayurvedic Tail Vidhi Hair Oil — Controls Hair Fall", img: "images/Hair Care/40.webP" },
       // IMAGE 33 — HAIR CARE — "Onion Black Seed" (Him Herbal) — REPLACE WITH images/Hair Care/33.png
-      { name: "Onion Black Seed", brand: "Him Herbal", desc: "Ayurvedic Hair Oil", img: "images/Hair Care/41.png" },
+      { name: "Onion Black Seed", brand: "Him Herbal", desc: "Ayurvedic Hair Oil", img: "images/Hair Care/41.webP" },
       // // IMAGE 34 — HAIR CARE — "Perfect Hair" (Pioneer) — REPLACE WITH images/Hair Care/34.png
       // { name: "Perfect Hair", brand: "Pioneer", desc: "Non-Sticky Hair Oil", img: "images/Hair Care/42.png" }
     ]
