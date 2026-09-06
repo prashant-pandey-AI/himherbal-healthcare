@@ -28,7 +28,7 @@
   const PRODUCTS = {
     Perfumes: [
       // IMAGE 01 — PERFUMES — "Blue Sportz" (John Phillips) — REPLACE WITH images/Perfumes/01.png
-      { name: "Blue Sportz", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/15.webP" },
+      { name: "Blue Sportz", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/15.png" },
       // IMAGE 02 — PERFUMES — "Passport" (John Phillips) — REPLACE WITH images/Perfumes/02.png
       { name: "Passport", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/16.webP" },
       // IMAGE 03 — PERFUMES — "Woody" (John Phillips) — REPLACE WITH images/Perfumes/03.png
