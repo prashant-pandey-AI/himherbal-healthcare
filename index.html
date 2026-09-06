@@ -93,7 +93,7 @@ poster="assets/img/feature-privatelabel.jpg"
 aria-hidden="true"
 >
 <source
-  src="assets\img\build-your-brand.mp4"
+  src="assets\daman Near Mumbai.mp4"
   type="video/mp4"
 />
   </video>
@@ -114,7 +114,7 @@ aria-label="Unmute video"
       <section class="stats" aria-label="Company at a glance">
         <div class="container stats-grid">
           <div class="stat">
-            <span class="stat-num" data-count="15" data-suffix="+">0</span
+            <span class="stat-num" data-count="20" data-suffix="+">0</span
             ><span class="stat-label">Years of Experience</span>
           </div>
           <div class="stat">
@@ -126,11 +126,11 @@ aria-label="Unmute video"
             ><span class="stat-label">Units / Month Capacity</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-count="45" data-suffix="+">0</span
+            <span class="stat-num" data-count="15" data-suffix="+">0</span
             ><span class="stat-label">Countries Served</span>
           </div>
           <div class="stat">
-            <span class="stat-num" data-count="300" data-suffix="+">0</span
+            <span class="stat-num" data-count="100" data-suffix="+">0</span
             ><span class="stat-label">Happy Clients</span>
           </div>
         </div>
@@ -141,11 +141,11 @@ aria-label="Unmute video"
         class="marquee-band partners"
         aria-label="Brands we manufacture for"
       >
-        <div class="marquee" data-marquee data-speed="50">
+        <div class="marquee" data-marquee data-speed="100">
           <div class="marquee-track">
             <span class="mq-item">Aura Naturals</span>
             <span class="mq-item">GlowLeaf</span>
-            <span class="mq-item">Pure&amp;Co</span>
+            <span class="mq-item">Pure& amp;Co</span>
             <span class="mq-item">Vedic Essence</span>
             <span class="mq-item">HerbaCare</span>
             <span class="mq-item">Bloomline</span>
@@ -371,6 +371,116 @@ aria-label="Unmute video"
           </div>
         </div>
       </section>
+
+      <!-- ============================================================
+     PREMIUM PERFUME COLLECTION
+     Single Multi-Page PDF Slider
+============================================================ -->
+
+<section class="section perfume-showcase-section" id="premium-perfumes">
+  <div class="container">
+
+    <div class="section-head perfume-showcase-head">
+      <span class="section-eyebrow">Premium Collection</span>
+
+      <h2>
+        Discover Our
+        <span class="text-green">Premium Perfumes</span>
+      </h2>
+
+      <p class="section-lead">
+        Explore our latest premium perfume collection, crafted for
+        brands looking for distinctive, market-ready fragrances.
+      </p>
+    </div>
+
+    <div class="perfume-pdf-slider">
+
+      <!-- Previous -->
+      <button
+        type="button"
+        class="perfume-pdf-btn perfume-pdf-prev"
+        id="perfumePdfPrev"
+        aria-label="Previous perfume page"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m15 18-6-6 6-6"></path>
+        </svg>
+      </button>
+
+      <!-- PDF DISPLAY -->
+      <div
+        class="perfume-pdf-window"
+        id="perfumePdfWindow"
+      >
+        <div
+          class="perfume-pdf-track"
+          id="perfumePdfTrack"
+        >
+
+          <div class="perfume-pdf-slide">
+            <div class="perfume-pdf-card">
+              <canvas
+                id="perfumePdfCanvas"
+                class="perfume-pdf-canvas"
+              ></canvas>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Next -->
+      <button
+        type="button"
+        class="perfume-pdf-btn perfume-pdf-next"
+        id="perfumePdfNext"
+        aria-label="Next perfume page"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="20"
+          height="20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m9 18 6-6-6-6"></path>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="perfume-pdf-navigation">
+
+      <div
+        class="perfume-pdf-dots"
+        id="perfumePdfDots"
+      ></div>
+
+      <div
+        class="perfume-pdf-counter"
+        aria-live="polite"
+      >
+        
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       <!-- ============ 5. MANUFACTURING EXCELLENCE ============ -->
       <section class="section excellence" id="excellence">
@@ -1127,6 +1237,17 @@ Our expertise in private-label and third-party manufacturing enables us to suppo
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/fx.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/fx.js"></script>
+    <script type="module" src="js/motion-fx.js"></script>
+
+    <!-- PDF ONLY -->
+    <script src="js/perfume-pdf.js"></script>
+
     <script type="module" src="js/motion-fx.js"></script>
   </body>
 </html>

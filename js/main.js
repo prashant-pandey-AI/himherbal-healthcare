@@ -455,3 +455,4 @@ heroVideo.play()
 .catch(() => {});
 
 }
+

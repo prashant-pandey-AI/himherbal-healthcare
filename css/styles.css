@@ -5407,3 +5407,178 @@ min-height: 320px;
     padding: 1.35rem;
   }
 }
+
+/* ============================================================
+PREMIUM PERFUME PDF SHOWCASE
+============================================================ */
+/* ============================================================
+   PREMIUM PERFUME PDF SHOWCASE
+============================================================ */
+
+/* .perfume-pdf-window {
+  width: 90vw;
+  margin-left: calc(50% - 45vw);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.perfume-pdf-window::-webkit-scrollbar {
+  display: none;
+}
+
+.perfume-pdf-track {
+  display: flex;
+  width: max-content;
+}
+
+.perfume-pdf-slide {
+  flex: 0 0 90vw;
+  width: 90vw;
+  scroll-snap-align: start;
+}
+
+.perfume-pdf-card {
+  width: 90%;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.perfume-pdf-canvas {
+  display: block;
+  width: 90vw !important;
+  max-width: 90vw;
+  height: auto !important;
+} */
+
+.perfume-pdf-window {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.perfume-pdf-window::-webkit-scrollbar {
+  display: none;
+}
+
+.perfume-pdf-track {
+  display: flex;
+  width: max-content;
+}
+
+.perfume-pdf-slide {
+  flex: 0 0 100vw;
+  width: 100vw;
+  scroll-snap-align: start;
+
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.perfume-pdf-card {
+  width: 100%;
+  max-width: 900px;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.perfume-pdf-canvas {
+  display: block;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   LARGE DESKTOP
+========================= */
+
+@media (min-width: 1200px) {
+  .perfume-pdf-card {
+    width: 85%;
+    max-width: 900px;
+  }
+}
+
+
+/* =========================
+   LAPTOP / TABLET
+========================= */
+
+@media (max-width: 1199px) {
+  .perfume-pdf-card {
+    width: 90%;
+    max-width: 800px;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .perfume-pdf-window {
+    width: 90vw;
+    margin-left: calc(50% - 45vw);
+  }
+
+  .perfume-pdf-slide {
+    width: 90vw;
+    flex-basis: 90vw;
+  }
+
+  .perfume-pdf-card {
+    width: 94%;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .perfume-pdf-canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .perfume-pdf-window {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
+
+  .perfume-pdf-slide {
+    width: 90vw;
+    flex-basis: 90vw;
+  }
+
+  .perfume-pdf-card {
+    width: 94%;
+    border-radius: 8px;
+  }
+
+  .perfume-pdf-canvas {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
