@@ -50,7 +50,7 @@
 
   const team = [
     [
-      "founder-pawan.jpg",
+      "Pawan Agrawal Image.jpg",
       "Founder",
       "Pawan Agarwal",
       "The founder of Him Herbal Healthcare — whose vision, and two decades of building trust with partners across the globe, is the foundation everything here stands on.",
