@@ -86,19 +86,75 @@
       { name: "Velevel", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/63.png" },
           ],
     Attar: [
-      { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/43.png"},
+      // { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/43.png"},
       
-      { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/44.png" },
+      // { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/44.png" },
       
-      { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/45.png" },
+      // { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/45.png" },
       
-      { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/46.png" },
+      // { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/46.png" },
       
-      { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/47.png" },
+      // { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/47.png" },
       
       { name: "Kesar Chandan Sukhad", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/48.png" },
       
-      { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/49.png" }
+      // { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/49.png" },
+      { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/50.png"},
+      
+      { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/51.png" },
+      
+      { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/52.png" },
+      
+      { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/53.png" },
+      
+      { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/54.png" },
+      
+      { name: "Kesar Chandan Sukhad", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/55.png" },
+      
+      { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/56.png" },
+      { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/57.png"},
+      
+      { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/58.png" },
+      
+      { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/59.png" },
+      
+      { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/60.png" },
+      
+      // { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/61.png" }
+    ],
+    "Scent": [
+      // IMAGE 22 — BODY CARE — "Turmeric Skin Cream" (Him Herbal) — REPLACE WITH images/Body care/22.png
+      { name: "Turmeric Skin Cream", brand: "Him Herbal", desc: "For Fair & Brighten, Soften Skin", img: "images/Scent/1.png" },
+      // IMAGE 23 — BODY CARE — "Balm" (Him Herbal) — REPLACE WITH images/Body care/23.png
+      { name: "Extra Power Balm", brand: "Him Herbal", desc: "Headache · Body Ache · Cold", img: "images/Scent/2.png" },
+      // IMAGE 24 — BODY CARE — "Body Lotion" (Him Herbal) — two variants (Advanced Whitening / Natural Moisturizing) shown on one label — REPLACE WITH images/Body care/24.png
+      { name: "Body Lotion", brand: "Him Herbal", desc: "Advanced Whitening & Natural Moisturizing", img: "images/Scent/4.png" },
+      // IMAGE 25 — BODY CARE — "Ice Talc Herbal Cool Powder" (Him Herbal) — REPLACE WITH images/Body care/25.png
+      { name: "Ice Talc Herbal Cool Powder", brand: "Him Herbal", desc: "Cooling Freshness", img: "images/Scent/3.png" },
+      // IMAGE 26 — BODY CARE — "Face Wash" (Him Herbal) — two variants (Neem & Aloevera / Fruit) shown on one label — REPLACE WITH images/Body care/26.png
+      { name: "Face Wash", brand: "Him Herbal", desc: "Neem & Aloevera / Fruit", img: "images/Scent/5.png" },
+      // IMAGE 27 — BODY CARE — "Fairness Cream for Men" (Him Herbal) — REPLACE WITH images/Body care/27.png
+      { name: "Fairness Cream for Men", brand: "Him Herbal", desc: "Complete Fairness Solution for Male Skin", img: "images/Scent/6.png" },
+      // IMAGE 28 — BODY CARE — "Pain Relief Ointment" (Him Herbal) — REPLACE WITH images/Body care/28.png
+      { name: "Pain Relief Ointment", brand: "Him Herbal", desc: "Back, Spinal, Neck, Shoulder, Joint & Knee Pain", img: "images/Scent/7.png" },
+      // IMAGE 29 — BODY CARE — "Spot Nil Cream" (Him Herbal) — REPLACE WITH images/Body care/29.png
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/8.png" },
+      { name: "Extra Power Balm", brand: "Him Herbal", desc: "Headache · Body Ache · Cold", img: "images/Scent/9.png" },
+      // IMAGE 24 — BODY CARE — "Body Lotion" (Him Herbal) — two variants (Advanced Whitening / Natural Moisturizing) shown on one label — REPLACE WITH images/Body care/24.png
+      { name: "Body Lotion", brand: "Him Herbal", desc: "Advanced Whitening & Natural Moisturizing", img: "images/Scent/10.png" },
+      // IMAGE 25 — BODY CARE — "Ice Talc Herbal Cool Powder" (Him Herbal) — REPLACE WITH images/Body care/25.png
+      { name: "Ice Talc Herbal Cool Powder", brand: "Him Herbal", desc: "Cooling Freshness", img: "images/Scent/11.png" },
+      // IMAGE 26 — BODY CARE — "Face Wash" (Him Herbal) — two variants (Neem & Aloevera / Fruit) shown on one label — REPLACE WITH images/Body care/26.png
+      { name: "Face Wash", brand: "Him Herbal", desc: "Neem & Aloevera / Fruit", img: "images/Scent/12.png" },
+      // IMAGE 27 — BODY CARE — "Fairness Cream for Men" (Him Herbal) — REPLACE WITH images/Body care/27.png
+      { name: "Fairness Cream for Men", brand: "Him Herbal", desc: "Complete Fairness Solution for Male Skin", img: "images/Scent/13.png" },
+      // IMAGE 28 — BODY CARE — "Pain Relief Ointment" (Him Herbal) — REPLACE WITH images/Body care/28.png
+      { name: "Pain Relief Ointment", brand: "Him Herbal", desc: "Back, Spinal, Neck, Shoulder, Joint & Knee Pain", img: "images/Scent/14.png" },
+      // IMAGE 29 — BODY CARE — "Spot Nil Cream" (Him Herbal) — REPLACE WITH images/Body care/29.png
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/15.png" }
+      
+
+      
     ],
     "Body Care": [
       // IMAGE 22 — BODY CARE — "Turmeric Skin Cream" (Him Herbal) — REPLACE WITH images/Body care/22.png
@@ -138,6 +194,7 @@
   const CATEGORY_GRID_ID = {
     Perfumes: "grid-perfumes",
     Attar: "grid-attar",
+    Scent: "grid-scent",
     "Body Care": "grid-bodycare",
     "Hair Care": "grid-haircare"
   };
