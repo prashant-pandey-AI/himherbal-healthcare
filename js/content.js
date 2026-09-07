@@ -86,19 +86,8 @@
       { name: "Velevel", brand: "John Phillips", desc: "John Phillips", img: "images/Perfumes/63.png" },
           ],
     Attar: [
-      // { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/43.png"},
-      
-      // { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/44.png" },
-      
-      // { name: "Blue London", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/45.png" },
-      
-      // { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/46.png" },
-      
-      // { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/47.png" },
-      
       { name: "Kesar Chandan Sukhad", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/48.png" },
       
-      // { name: "Royal Miracle", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/49.png" },
       { name: "24 Carat", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/50.png"},
       
       { name: "Intense", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/51.png" },
@@ -120,7 +109,6 @@
       
       { name: "Iceberg", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/60.png" },
       
-      // { name: "Jeans", brand: "Pioneer Scent", desc: "Pioneer Scent", img: "images/Attar/61.png" }
     ],
     "Scent": [
       // IMAGE 22 — BODY CARE — "Turmeric Skin Cream" (Him Herbal) — REPLACE WITH images/Body care/22.png
@@ -151,7 +139,12 @@
       // IMAGE 28 — BODY CARE — "Pain Relief Ointment" (Him Herbal) — REPLACE WITH images/Body care/28.png
       { name: "Pain Relief Ointment", brand: "Him Herbal", desc: "Back, Spinal, Neck, Shoulder, Joint & Knee Pain", img: "images/Scent/14.png" },
       // IMAGE 29 — BODY CARE — "Spot Nil Cream" (Him Herbal) — REPLACE WITH images/Body care/29.png
-      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/15.png" }
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/15.png" },
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/16.png" },
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/17.png" },
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/18.png" },
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/19.png" },
+      { name: "Spot Nil Cream", brand: "Him Herbal", desc: "Acne & Pimple Cream", img: "images/Scent/20.png" }
       
 
       
