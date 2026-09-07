@@ -50,7 +50,7 @@
 
   const team = [
     [
-      "founder-pawan.jpg",
+      "Pawan Agrawal Image.jpg",
       "Founder",
       "Pawan Agarwal",
       "The founder of Him Herbal Healthcare — whose vision, and two decades of building trust with partners across the globe, is the foundation everything here stands on.",
@@ -582,3 +582,125 @@
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
 })();
+/* ---------- Certification Infinite Slider ---------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const slider = document.querySelector(".cert-slider");
+  const track = document.querySelector(".cert-track");
+
+  if (!slider || !track) return;
+
+  const originalCards = Array.from(
+    track.querySelectorAll(".cert-badge")
+  );
+
+  if (originalCards.length <= 1) return;
+
+  let currentIndex = 0;
+  let autoSlide;
+
+  /*
+   * Clone cards so the slider can continue
+   * seamlessly into an infinite loop.
+   */
+  originalCards.forEach(card => {
+    const clone = card.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    track.appendChild(clone);
+  });
+
+  const getCardWidth = () => {
+    const card = track.querySelector(".cert-badge");
+
+    if (!card) return 0;
+
+    const gap = parseFloat(
+      getComputedStyle(track).gap
+    ) || 0;
+
+    return card.offsetWidth + gap;
+  };
+
+
+  const moveSlider = () => {
+
+    const cardWidth = getCardWidth();
+
+    currentIndex++;
+
+    track.style.transform =
+      `translateX(-${currentIndex * cardWidth}px)`;
+
+  };
+
+
+  const startAutoSlide = () => {
+
+    clearInterval(autoSlide);
+
+    autoSlide = setInterval(() => {
+
+      moveSlider();
+
+    }, 3000);
+
+  };
+
+
+  /*
+   * When we reach the cloned cards,
+   * instantly jump back to the original
+   * position without the user noticing.
+   */
+  track.addEventListener("transitionend", () => {
+
+    if (currentIndex >= originalCards.length) {
+
+      track.style.transition = "none";
+
+      currentIndex = 0;
+
+      const cardWidth = getCardWidth();
+
+      track.style.transform =
+        `translateX(-${currentIndex * cardWidth}px)`;
+
+      /*
+       * Force browser reflow before
+       * restoring the animation.
+       */
+      track.offsetHeight;
+
+      track.style.transition =
+        "transform .6s var(--ease)";
+    }
+
+  });
+
+
+  /*
+   * Recalculate position if screen size changes.
+   */
+  window.addEventListener("resize", () => {
+
+    const cardWidth = getCardWidth();
+
+    track.style.transition = "none";
+
+    track.style.transform =
+      `translateX(-${currentIndex * cardWidth}px)`;
+
+    track.offsetHeight;
+
+    track.style.transition =
+      "transform .6s var(--ease)";
+
+  });
+
+
+  /* Start automatic sliding */
+  startAutoSlide();
+
+});
+
